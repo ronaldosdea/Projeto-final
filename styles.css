@@ -90,6 +90,12 @@ nav ul li a:hover {
     height: 30%;
     
 }
+.carousel-item img{
+
+    width: 1980px;
+    height: 490;
+}
+
 
 .introduction-container {
   text-align: justify; /* Aplica a justificação ao texto */
@@ -239,10 +245,12 @@ nav ul li a:hover {
 
 /* Estilos para o rodapé */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 0;
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    text-align: center;
+    padding: 20px 0;
 }
+
 
 .footer-container {
     
@@ -294,6 +302,62 @@ font-size: 18px;
 .footer-container ul li a:hover {
     color: #007bff;
 }
+/* Estilizando o carrossel de aniversariantes */
+.aniversariantes {
+    font-size: 16px;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  
+  .aniversariantes h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  #carousel {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  #carousel li {
+    display: none;
+    margin: 5px 0;
+    animation: fade 5s linear infinite; /* Animação de fade suave com repetição infinita */
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Estilo para o nome do aniversariante */
+  #carousel li:first-child {
+    display: block;
+    animation-delay: 1s; /* Adiciona um atraso inicial para o primeiro nome */
+  }
+  
+  #carousel li::before {
+    content: "🎉 "; /* Adiciona um emoji de festa antes do nome */
+  }
+  
+  /* Efeito de hover para o nome do aniversariante */
+  #carousel li:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho no hover */
+    transition: transform 0.3s ease-in-out;
+  }
 
 /* Personalize os estilos conforme necessário */
 
