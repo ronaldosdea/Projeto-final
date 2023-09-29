@@ -1,0 +1,344 @@
+/* Estilos para o site da barbearia */
+/* Personalize os estilos conforme necessário */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+.menu {
+    background-color:#bb15e9;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #bb15e9;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #bb15e9;
+    z-index: 1;
+}
+
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+.content {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+
+header {
+    background-color: #bb15e9;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e13ce7;
+}
+
+.ajuste{
+
+    width: 100%;
+    height: 30%;
+    
+}
+
+.introduction-container {
+  text-align: justify; /* Aplica a justificação ao texto */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Escolha a fonte desejada */
+  font-size: 16px; /* Tamanho da fonte */
+  line-height: 1.5; /* Espaçamento entre linhas */
+  margin: 20px; /* Margem para espaçamento */
+  padding: 20px; /* Preenchimento interno */
+  background-color: #cb6ce6; /* Cor de fundo */
+  border: 1px solid #000000; /* Borda */
+  border-radius: 5px; /* Borda arredondada */
+  
+}
+
+/* Estilo para o título da introdução */
+.introduction-title {
+  font-size: 24px; /* Tamanho do título */
+  display: flex;
+  justify-content: center;
+  font-weight: bold; /* Negrito */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilo para o texto da introdução */
+.introduction-text {
+  font-size: 18px; /* Tamanho do texto */
+  margin-bottom: 10px; /* Espaçamento abaixo do texto */
+}
+
+
+
+
+
+/* Personalize os estilos conforme necessário */
+
+#section-1 {
+    
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color:#cb6ce6 ;
+
+}
+#section-1{
+    
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+#section-1 a {
+    text-decoration: none;
+    color: #333;
+    margin: 20px;
+    font-size: 18px;
+    display: block;
+    transition: color 0.3s;
+}
+
+
+.pro h2{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.pro hr{
+
+    width: 1000em;
+    color: #fff;
+}
+
+
+
+.card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Estilos para a equipe e avaliações na seção 2 */
+#section-2{
+    display: flex;
+    justify-content: space-around;
+
+}
+.card {
+  width: 250px;
+  height: 254px;
+  background: #07182E;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+
+
+
+  
+  
+/* Personalize os estilos conforme necessário */
+
+#section-2 {
+    background-color: #eee;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#section-2 a {
+    text-decoration: none;
+    color: #333;
+    margin: 20px;
+    font-size: 18px;
+    display: block;
+    transition: color 0.3s;
+}
+
+#section-2 a:hover {
+    color: #e74c3c;
+}
+
+#reviews {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    
+   
+display: flex;
+    
+   
+justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container h3 {
+    font-size: 24px;
+    
+   
+margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-container ul {
+    
+   
+list-style: none;
+    padding: 0;
+}
+
+.footer-container ul li {
+    margin-bottom: 10px;
+}
+
+.footer-container ul li a {
+    
+   
+text-decoration: none;
+    
+   
+color: #fff;
+    
+   
+font-weight: bold;
+    
+   
+font-size: 18px;
+    transition: color 0.3s;
+}
+
+.footer-container ul li a:hover {
+    color: #007bff;
+}
+
+/* Personalize os estilos conforme necessário */
+
+
+footer {
+    background-color: #bb15e9;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    header {
+        text-align: center;
+    }
+    
+    .card {
+        width: 90%;
+    }
+    
+    #section-2 a {
+        font-size: 16px;
+    }
+    
+    footer {
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #cb6ce6;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.cadastro, .consulta {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.cadastro h2{
+    color: #fff;
+}
+.consulta h2{
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+   
+max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    
+   
+background-color: #f700ff;
+    color: #fff;
+    
+   
+padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9e00b3;
+}

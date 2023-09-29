@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Consulta Médica</title>
+</head>
+<body>
+    <h1>Agendamento de Consulta Médica</h1>
+    
+    <!-- Formulário de Cadastro de Paciente -->
+    <div class="cadastro">
+        <h2>Cadastro de Paciente</h2>
+        <form id="cadastroForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" required>
+
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <!-- Formulário de Agendamento de Consulta -->
+    <div class="consulta">
+        <h2>Agendamento de Consulta</h2>
+        <form id="consultaForm">
+            <label for="medico">Escolha o Médico:</label>
+            <select id="medico" required>
+                <option value="medico1">Médico 1</option>
+                <option value="medico2">Médico 2</option>
+                <option value="medico3">Médico 3</option>
+                <!-- Adicione mais médicos conforme necessário -->
+            </select>
+
+            <label for="dataConsulta">Data da Consulta:</label>
+            <input type="date" id="dataConsulta" required>
+
+            <label for="horarioConsulta">Horário da Consulta:</label>
+            <input type="time" id="horarioConsulta" required>
+
+            <label for="motivoConsulta">Motivo da Consulta:</label>
+            <textarea id="motivoConsulta" rows="4"></textarea>
+
+            <button type="submit">Agendar</button>
+        </form>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
