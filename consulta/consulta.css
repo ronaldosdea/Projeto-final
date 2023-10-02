@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #cb6ce6;
+    background-image: url(../imagem/Beleza\ \(1\).png);
 }
 
 h1 {
@@ -12,14 +12,14 @@ h1 {
 .cadastro, .consulta {
     margin: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
+   
     border-radius: 5px;
 }
 .cadastro h2{
-    color: #fff;
+    color: black;
 }
 .consulta h2{
-    color: #fff;
+    color: black;
 }
 
 form {
@@ -46,7 +46,7 @@ select,
 textarea {
     padding: 5px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+  
     border-radius: 3px;
 }
 

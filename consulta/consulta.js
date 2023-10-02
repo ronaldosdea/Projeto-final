@@ -40,7 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Motivo da Consulta:", motivoConsulta);
 
         consultaForm.reset();
+
+         // Redirecionar para a página principal com os dados do paciente como parâmetros da URL
+         const queryString = `?nome=${encodeURIComponent(nome.nome)}&email=${encodeURIComponent(endereco.email)}&telefone=${encodeURIComponent(telefone.telefone)}`;
+         window.location.href = `http://127.0.0.1:5500/index.html?${queryString}`;
     }
+    
 });
+
 
 

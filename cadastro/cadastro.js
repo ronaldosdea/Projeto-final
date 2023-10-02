@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     // Capturar o formulário de cadastro de funcionário
     const funcionarioForm = document.getElementById("funcionarioForm");
@@ -20,8 +21,18 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("E-mail:", email);
         console.log("Telefone:", telefone);
         console.log("Data de Nascimento:", dataNascimento);
-
+         
+      
         // Limpar o formulário após o cadastro
         funcionarioForm.reset();
+      
+        const modal = document.getElementById("modal");
+         modal.style.display = "block";
+
+         const closeButton = document.querySelector(".close");
+         closeButton.addEventListener("click", function() {
+          modal.style.display = "none";
+});
+       
     });
 });

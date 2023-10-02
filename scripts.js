@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.getElementById("carousel");
     const items = Array.from(carousel.getElementsByTagName("li"));

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro de Funcionário</title>
+</head>
+<body>
+    <h1>Cadastro de Funcionário</h1>
+
+    <div class="cadastro">
+        <form id="funcionarioForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" required>
+
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" required>
+
+            <button type="submit">Cadastrar Funcionário</button>
+        </form>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <!-- Conteúdo do modal aqui -->
+            <span class="close">&times;</span>
+            <h2>Modal Title</h2>
+            <p>Conteúdo do modal...</p>
+        </div>
+    </div>
+    <section id="sec-modal" class="hide">
+        <article class="modal " id="first">
+            <header>
+                <h1>Confirme seu cadastro</h1>
+            </header>
+            <main>
+                <form  method="get">
+                    <div id="meuElemento">
+
+                        <label for="nome">Nome:</label>
+                        Nome:
+                       <input type="text" id="nome" name="nome">
+                       
+                       <label for="email">Email:</label>
+                       Email
+                       <input type="email" id="email" name="email">
+                   
+                       <label for="endereco">Endereço:</label>
+                       Endereço:
+                       <input type="text" id="endereco" required>
+           
+                       <label for="telefone">Telefone:</label>
+                       Telefone:
+                       <input type="tel" id="telefone" required>
+           
+                       <label for="dataNascimento">Data de Nascimento:</label>
+                       Data de Nascimento:
+                       <input type="date" id="dataNascimento" required>
+                       
+                    </div> 
+                   
+                </form>
+            </main>
+            <footer>
+                <button type="submit" id="confirma">Confirmar</button>
+                <button type="submit" id="cancela">Cancelar</button>
+            </footer>
+        </article>
+    </section>
+
+    <script src="cadastro.js" type="module"></script>
+    <script src="modal.js"></script>
+</body>
+</html>
