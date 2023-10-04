@@ -34,48 +34,48 @@
             <!-- Conteúdo do modal aqui -->
             <span class="close">&times;</span>
             <h2>Modal Title</h2>
-            <p>Conteúdo do modal...</p>
+            <p>  <section id="sec-modal" class="hide">
+                <article class="modal " id="first">
+                    <header>
+                        <h1>Confirme seu cadastro</h1>
+                    </header>
+                    <main>
+                        <form  method="get">
+                            <div id="meuElemento">
+        
+                                <label for="nome">Nome:</label>
+                                Nome:
+                               <input type="text" id="nome" name="nome">
+                               
+                               <label for="email">Email:</label>
+                               Email
+                               <input type="email" id="email" name="email">
+                           
+                               <label for="endereco">Endereço:</label>
+                               Endereço:
+                               <input type="text" id="endereco" required>
+                   
+                               <label for="telefone">Telefone:</label>
+                               Telefone:
+                               <input type="tel" id="telefone" required>
+                   
+                               <label for="dataNascimento">Data de Nascimento:</label>
+                               Data de Nascimento:
+                               <input type="date" id="dataNascimento" required>
+                               
+                            </div> 
+                           
+                        </form>
+                    </main>
+                    <footer>
+                        <button type="submit" id="confirma">Confirmar</button>
+                        <button type="submit" id="cancela">Cancelar</button>
+                    </footer>
+                </article>
+            </section></p>
         </div>
     </div>
-    <section id="sec-modal" class="hide">
-        <article class="modal " id="first">
-            <header>
-                <h1>Confirme seu cadastro</h1>
-            </header>
-            <main>
-                <form  method="get">
-                    <div id="meuElemento">
-
-                        <label for="nome">Nome:</label>
-                        Nome:
-                       <input type="text" id="nome" name="nome">
-                       
-                       <label for="email">Email:</label>
-                       Email
-                       <input type="email" id="email" name="email">
-                   
-                       <label for="endereco">Endereço:</label>
-                       Endereço:
-                       <input type="text" id="endereco" required>
-           
-                       <label for="telefone">Telefone:</label>
-                       Telefone:
-                       <input type="tel" id="telefone" required>
-           
-                       <label for="dataNascimento">Data de Nascimento:</label>
-                       Data de Nascimento:
-                       <input type="date" id="dataNascimento" required>
-                       
-                    </div> 
-                   
-                </form>
-            </main>
-            <footer>
-                <button type="submit" id="confirma">Confirmar</button>
-                <button type="submit" id="cancela">Cancelar</button>
-            </footer>
-        </article>
-    </section>
+  
 
     <script src="cadastro.js" type="module"></script>
     <script src="modal.js"></script>

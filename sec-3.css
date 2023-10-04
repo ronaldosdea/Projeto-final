@@ -1,0 +1,47 @@
+
+.article-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.article-section article {
+    text-align: center;
+    width: 30%;
+    margin: 10px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px #888888;
+}
+
+.article-section img {
+    max-width: 100%;
+}
+
+.article-section h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.article-section p {
+    font-size: 1rem;
+}
+
+.article-section a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.article-section a:hover {
+    background-color: #555;
+}
+
+.comments {
+    margin-top: 20px;
+}

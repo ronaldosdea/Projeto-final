@@ -32,7 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
          const closeButton = document.querySelector(".close");
          closeButton.addEventListener("click", function() {
           modal.style.display = "none";
-});
+
+
+          elemento.innerHTML = ` console.log("Cadastro de Funcionário:");
+            console.log("Nome:", nome);
+            console.log("Cargo:", cargo);
+            console.log("E-mail:", email);
+            console.log("Telefone:", telefone);
+            console.log("Data de Nascimento:", dataNascimento); `;
+       });
        
     });
 });

@@ -1,6 +1,8 @@
 /* Estilos para o site da barbearia */
 /* Personalize os estilos conforme necessário */
 
+ @import url(sec-3.css);
+ @import url(card.css);
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -49,10 +51,6 @@ body {
     padding: 20px;
     border: 1px solid #ccc;
 }
-
-
-
-
 
 
 header {
@@ -132,9 +130,8 @@ nav ul li a:hover {
 
 /* Personalize os estilos conforme necessário */
 
-#section-1 {
+.section-1 {
     
-    background-color: #f0f0f0;
     text-align: center;
     padding: 40px 0;
     display: flex;
@@ -142,21 +139,7 @@ nav ul li a:hover {
     background-color:#cb6ce6 ;
 
 }
-#section-1{
-    
-    text-align: center;
-    padding: 40px 0;
-}
 
-
-#section-1 a {
-    text-decoration: none;
-    color: #333;
-    margin: 20px;
-    font-size: 18px;
-    display: block;
-    transition: color 0.3s;
-}
 
 
 .pro h2{
@@ -191,11 +174,18 @@ nav ul li a:hover {
 }
 
 /* Estilos para a equipe e avaliações na seção 2 */
-#section-2{
+.section-2{
     display: flex;
     justify-content: space-around;
 
 }
+.section-4{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+  
 .card {
   width: 250px;
   height: 254px;
@@ -208,31 +198,9 @@ nav ul li a:hover {
   border-radius: 20px;
 }
 
-
-
-
-  
-  
 /* Personalize os estilos conforme necessário */
 
-#section-2 {
-    background-color: #eee;
-    text-align: center;
-    padding: 40px 0;
-}
 
-#section-2 a {
-    text-decoration: none;
-    color: #333;
-    margin: 20px;
-    font-size: 18px;
-    display: block;
-    transition: color 0.3s;
-}
-
-#section-2 a:hover {
-    color: #e74c3c;
-}
 
 #reviews {
     border: 1px solid #ccc;
@@ -380,12 +348,12 @@ footer p {
 
 /* Estilos responsivos para dispositivos móveis */
 @media screen and (max-width: 768px) {
-    nav ul {
+    .menu ul {
         text-align: center;
-        padding-top: 10px;
+        padding: 10px 0;
     }
     
-    nav ul li {
+    .menu ul li {
         display: block;
         margin: 10px 0;
     }
@@ -398,11 +366,57 @@ footer p {
         width: 90%;
     }
     
-    #section-2 a {
-        font-size: 16px;
+    .article-section {
+        flex-direction: column;
+    }
+
+    .article-section article {
+        width: 90%;
+        margin: 10px auto;
     }
     
-    footer {
-        padding: 10px 0;
+    .article-section img {
+        max-width: 100%;
+    }
+
+    .article-section h2 {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    .article-section p {
+        font-size: 1rem;
+    }
+
+    .article-section a {
+        margin-top: 10px;
+    }
+
+    .comments {
+        margin-top: 20px;
+    }
+
+    .section-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pro h2 {
+        font-size: 1.5em;
+    }
+
+    .pro hr {
+        width: 100%;
+    }
+
+    .card {
+        width: 48%;
+        margin: 10px auto;
+    }
+
+    .section-2,
+    .section-4 {
+        flex-direction: column;
+        align-items: center;
     }
 }
