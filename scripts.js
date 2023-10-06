@@ -19,3 +19,5 @@ document.addEventListener("DOMContentLoaded", function () {
     // Alterna automaticamente os aniversariantes a cada 3 segundos (3000 milissegundos)
     setInterval(nextItem, 3000);
   });
+
+  AOS.init();

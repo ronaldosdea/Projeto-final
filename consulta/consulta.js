@@ -18,6 +18,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const telefone = document.getElementById("telefone").value;
         const dataNascimento = document.getElementById("dataNascimento").value;
 
+        // Armazenar os dados no Local Storage
+        const paciente = {
+            nome,
+            endereco,
+            telefone,
+            dataNascimento,
+        };
+        localStorage.setItem("paciente", JSON.stringify(paciente));
+
         console.log("Cadastro de Paciente:");
         console.log("Nome:", nome);
         console.log("Endereço:", endereco);
@@ -41,12 +50,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         consultaForm.reset();
 
-         // Redirecionar para a página principal com os dados do paciente como parâmetros da URL
-         const queryString = `?nome=${encodeURIComponent(nome.nome)}&email=${encodeURIComponent(endereco.email)}&telefone=${encodeURIComponent(telefone.telefone)}`;
-         window.location.href = `http://127.0.0.1:5500/index.html?${queryString}`;
-    }
-    
+        // Redirecionar para a página principal com os dados do paciente como parâmetros da URL
+        const paciente = JSON.parse(localStorage.getItem("paciente"));
+    //     const queryString = `?nome=${encodeURIComponent(paciente.nome)}&endereco=${encodeURIComponent(paciente.endereco)}&telefone=${encodeURIComponent(paciente.telefone)}`;
+    //     window.location.href = `http://127.0.0.1:5500/index.html${queryString}`;
+     }
 });
-
-
 

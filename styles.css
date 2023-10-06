@@ -3,14 +3,48 @@
 
  @import url(sec-3.css);
  @import url(card.css);
+ @import url(comentario.css);
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     
 }
+#home{
+    background-color: transparent;
+}
+
 .menu {
     background-color:#bb15e9;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   
+
+}
+
+.menu li {
+    margin-bottom: 10px;
+    
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: none;
+    
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fffbfb;
+    margin: 4px 0;
+  
+}
+.menu-toggle {
+    display: block;
+    display: none;
+   
 }
 
 .menu ul {
@@ -88,6 +122,11 @@ nav ul li a:hover {
     height: 30%;
     
 }
+.carousel-control-prev{
+
+    background-color: transparent;
+}
+
 .carousel-item img{
 
     width: 1980px;
@@ -103,7 +142,8 @@ nav ul li a:hover {
   margin: 20px; /* Margem para espaçamento */
   padding: 20px; /* Preenchimento interno */
   background-color: #cb6ce6; /* Cor de fundo */
-  border: 1px solid #000000; /* Borda */
+  /* border: 1px solid #000000;  */
+  box-shadow: 0 0 3px  black;
   border-radius: 5px; /* Borda arredondada */
   
 }
@@ -114,6 +154,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   font-weight: bold; /* Negrito */
+  color: #fff;
   margin-bottom: 10px; /* Espaçamento abaixo do título */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -160,7 +201,7 @@ nav ul li a:hover {
 
 .card {
     display: inline-block;
-    width: 30%;
+    width: 48%;
     margin: 10px;
     padding: 20px;
     background-color: #fff;
@@ -186,16 +227,18 @@ nav ul li a:hover {
 }
 
   
-.card {
+.card-2 {
   width: 250px;
   height: 254px;
-  background: #07182E;
+  box-shadow: 0 0 4px black ;
   position: relative;
   display: flex;
   place-content: center;
   place-items: center;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 20px ;
+    
+
 }
 
 /* Personalize os estilos conforme necessário */
@@ -221,12 +264,9 @@ footer {
 
 
 .footer-container {
-    
-   
-display: flex;
-    
-   
-justify-content: space-around;
+       
+    display: flex;  
+    justify-content: space-around;
     align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
@@ -234,16 +274,12 @@ justify-content: space-around;
 
 .footer-container h3 {
     font-size: 24px;
-    
-   
-margin-bottom: 20px;
+    margin-bottom: 20px;
     color: #fff;
 }
 
 .footer-container ul {
-    
-   
-list-style: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -347,7 +383,80 @@ footer p {
 }
 
 /* Estilos responsivos para dispositivos móveis */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 809px) {
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .menu.active {
+        display: flex;
+        
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+       
+    }
+
+    .menu li {
+        margin: 20px;
+        
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        transition: color 0.3s;
+    }
+
+    .menu a:hover {
+        color: #e13ce7;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 2000;
+        
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 4px 0;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .menu-icon.active .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .menu-icon.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.active .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
     .menu ul {
         text-align: center;
         padding: 10px 0;
@@ -362,8 +471,11 @@ footer p {
         text-align: center;
     }
     
-    .card {
-        width: 90%;
+    .card-2 {
+        
+        width: 72%;
+       
+       
     }
     
     .article-section {
@@ -407,11 +519,6 @@ footer p {
 
     .pro hr {
         width: 100%;
-    }
-
-    .card {
-        width: 48%;
-        margin: 10px auto;
     }
 
     .section-2,
