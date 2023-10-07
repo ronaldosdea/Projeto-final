@@ -4,6 +4,10 @@
  @import url(sec-3.css);
  @import url(card.css);
  @import url(comentario.css);
+ @import url(menu.css);
+@import url(rodape.css);
+
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -12,72 +16,6 @@ body {
 }
 #home{
     background-color: transparent;
-}
-
-.menu {
-    background-color:#bb15e9;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-   
-
-}
-
-.menu li {
-    margin-bottom: 10px;
-    
-}
-
-.menu-icon {
-    cursor: pointer;
-    display: none;
-    
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fffbfb;
-    margin: 4px 0;
-  
-}
-.menu-toggle {
-    display: block;
-    display: none;
-   
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu ul li {
-    display: inline-block;
-    position: relative;
-}
-
-.menu ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-}
-
-.menu ul li a:hover {
-    background-color: #bb15e9;
-}
-
-.submenu-content {
-    display: none;
-    position: absolute;
-    background-color: #bb15e9;
-    z-index: 1;
-}
-
-.submenu:hover .submenu-content {
-    display: block;
 }
 
 .content {
@@ -209,10 +147,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.card h2 {
-    color: #333;
-    font-size: 24px;
-}
+
 
 /* Estilos para a equipe e avaliações na seção 2 */
 .section-2{
@@ -237,6 +172,7 @@ nav ul li a:hover {
   place-items: center;
   overflow: hidden;
   border-radius: 20px ;
+  
     
 
 }
@@ -255,132 +191,6 @@ nav ul li a:hover {
 }
 
 /* Estilos para o rodapé */
-footer {
-    background-color: #333; /* Fundo escuro */
-    color: #fff; /* Texto branco */
-    text-align: center;
-    padding: 20px 0;
-}
-
-
-.footer-container {
-       
-    display: flex;  
-    justify-content: space-around;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-container h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.footer-container ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-container ul li {
-    margin-bottom: 10px;
-}
-
-.footer-container ul li a {
-    
-   
-text-decoration: none;
-    
-   
-color: #fff;
-    
-   
-font-weight: bold;
-    
-   
-font-size: 18px;
-    transition: color 0.3s;
-}
-
-.footer-container ul li a:hover {
-    color: #007bff;
-}
-/* Estilizando o carrossel de aniversariantes */
-.aniversariantes {
-    font-size: 16px;
-    margin: 20px 0;
-    cursor: pointer;
-  }
-  
-  .aniversariantes h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #fff;
-    text-transform: uppercase;
-  }
-  
-  #carousel {
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  #carousel li {
-    display: none;
-    margin: 5px 0;
-    animation: fade 5s linear infinite; /* Animação de fade suave com repetição infinita */
-  }
-  
-  @keyframes fade {
-    0% {
-      opacity: 0;
-    }
-    25% {
-      opacity: 1;
-    }
-    75% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
-  /* Estilo para o nome do aniversariante */
-  #carousel li:first-child {
-    display: block;
-    animation-delay: 1s; /* Adiciona um atraso inicial para o primeiro nome */
-  }
-  
-  #carousel li::before {
-    content: "🎉 "; /* Adiciona um emoji de festa antes do nome */
-  }
-  
-  /* Efeito de hover para o nome do aniversariante */
-  #carousel li:hover {
-    transform: scale(1.05); /* Aumenta ligeiramente o tamanho no hover */
-    transition: transform 0.3s ease-in-out;
-  }
-
-/* Personalize os estilos conforme necessário */
-
-
-footer {
-    background-color: #bb15e9;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer p {
-    font-size: 14px;
-}
 
 /* Estilos responsivos para dispositivos móveis */
 @media screen and (max-width: 809px) {

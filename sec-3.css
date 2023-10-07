@@ -22,16 +22,18 @@
 .article-section h2 {
     font-size: 1.5rem;
     margin-top: 10px;
+    color: #fff;
 }
 
 .article-section p {
     font-size: 1rem;
+    color: #000000;
 }
 
 .article-section a {
     display: inline-block;
     margin-top: 10px;
-    background-color: #333;
+    background-color: #f700ff;
     color: #fff;
     padding: 5px 10px;
     text-decoration: none;
@@ -39,7 +41,7 @@
 }
 
 .article-section a:hover {
-    background-color: #555;
+    background-color: #9e00b3;
 }
 
 .comments {

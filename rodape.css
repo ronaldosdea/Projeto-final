@@ -1,0 +1,23 @@
+/* Estilos para o rodapé principal */
+footer {
+    background-color: #bb15e9;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para as redes sociais (adapte ao seu HTML) */
+footer .rede {
+    font-size: 1.6em;
+    background-color: transparent;
+    margin-right: 20px; /* Espaço entre os ícones */
+}
+
+footer .rede:last-child {
+    margin-right: 0; /* Remove o espaço à direita do último ícone */
+}
+
+footer .rede:hover {
+    background-color: transparent;
+    /* Adicione estilos de hover se necessário */
+}
