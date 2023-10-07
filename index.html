@@ -18,52 +18,42 @@
     <header>
    
         
-        <nav >
-          <div class="menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-          <ul  class="menu">
-              <li><a href="#home">home</a></li>
-              <li class="submenu">
-                  <a href="./consulta/consulta.html">Cadastro</a>
-                 
-              </li>
-              <li class="submenu">
-                  <a href="#">Tratamentos para a Face</a>
-                  <ul class="submenu-content">
-                      <li><a href="#">Limpeza de Pele</a></li>
-                      <li><a href="#">Tratamentos Anti-idade</a></li>
-                      <li><a href="#">Botox</a></li>
-                      
-                   
-                  </ul>
-              </li>
-              <li class="submenu">
-                  <a href="#">Tratamentos para o Corpo</a>
-                  <ul class="submenu-content">
-                      <li><a href="#">Depilação</a></li>
-                      <li><a href="#">Massagem modeladora</a></li>
-                      <li><a href="#">Cutilagem de Pé e Mão</a></li>
-                    
-                  </ul>
-              </li>
-              <li class="submenu">
-                  <a href="#">Tratamentos Capilares</a>
-                  <ul class="submenu-content">
-                      <li><a href="#">Hidratação</a></li>
-                      <li><a href="#">Nutrição</a></li>
-                      
-                     
-                  </ul>
-              </li>
-          </ul>
-      </nav>
+      <nav>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">promoções</a></li>
+            <li class="submenu">
+                <a href="#">Tratamentos Faciais</a>
+                <ul class="submenu-content">
+                    <li><a href="#">Limpeza de Pele</a></li>
+                    <li><a href="#">Tratamentos Anti-idade</a></li>
+                    <li><a href="#">Botox</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="#">Tratamentos Corporais</a>
+                <ul class="submenu-content">
+                    <li><a href="#">Depilação</a></li>
+                    <li><a href="#">Massagem Modeladora</a></li>
+                    <li><a href="#">Cutilagem de Pé e Mão</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="#">Tratamentos Capilares</a>
+                <ul class="submenu-content">
+                    <li><a href="#">Hidratação</a></li>
+                    <li><a href="#">Nutrição</a></li>
+                </ul>
+            </li>
+            <li><a href="./consulta/consulta.html">Cadastre</a></li>
+        </ul>
+    </nav>
+
+</header>
     </header>
 
     <main id="home">
-      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+      <div  id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./imagem/Beleza Radiante.png" class="d-block w-100" alt="imagem beleza">
@@ -84,12 +74,12 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
+        
         <!--  sobre -->
 
-        <div class="introduction-container">
+        <div class="introduction-container" id="about" >
           <h1 data-aos="zoom-out-left" class="introduction-title">Bem-vindo à Beleza Radiante - O Seu Refúgio da Beleza e Bem-Estar!</h1>
-          <p  data-aos="zoom-out-left" class="introduction-text">
+          <p  class="introduction-text">
              
 
           Na Beleza Radiante, acreditamos que a verdadeira beleza começa de dentro para fora. É por isso que estamos dedicados a proporcionar a você uma experiência de estética única, onde o relaxamento, o rejuvenescimento e a autoconfiança se fundem em perfeita harmonia.
@@ -106,11 +96,9 @@
             <hr>
             <h2  data-aos="zoom-out-left">promoções</h2>
           </div>
-           <section  data-aos="fade-down"
-           data-aos-easing="linear"
-           data-aos-duration="1500" class="section-1">
+           <section class="section-1">
              
-            <div  class="card-2">
+            <div  id="about" class="card-2">
               <img src="./imagem/Contrate um tratamento anti-idade e ganhe uma limpeza de pele facial. (2).png" alt="">
             </div>
             <div class="card-2">
@@ -130,7 +118,7 @@
             <h2  data-aos="zoom-out-left">Saiba mais</h2>
           </div>
 
-               <section  data-aos="zoom-out-left" class="article-section">
+               <section  class="article-section">
           <article>
               <img src="./imagem/limpeza-pele-abc-com-mascara-1200x745.jpg" alt="li">
               <h2>Limpeza de Pele</h2>
@@ -166,16 +154,18 @@
       </section>
 
 
-      <div class="pro">
-        <hr>
-        <h2  data-aos="zoom-out-left">comentarios</h2>
+      
+  <section class="section-4">
+
+    <div class="comments-container">
+      <h1>Comentários</h1>
+      <div class="comment-form">
+          <textarea id="comment-input" placeholder="Escreva seu comentário aqui"></textarea>
+          <button id="submit-comment">Enviar</button>
       </div>
-<section class="section-4">
-  
-  
-  <div class="comment-section">
-      <textarea id="comment-box" placeholder="Escreva seu comentário aqui"></textarea>
-      <button id="submit-comment">Enviar</button>
+      <ul id="comment-list">
+          <!-- Comentários existentes serão exibidos aqui -->
+      </ul>
   </div>
     </section>
       
@@ -213,7 +203,7 @@
 
     <script src="scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+     <script src="to do list.js"></script>
     <script src="menu.js"></script>
 </body>
 </html>

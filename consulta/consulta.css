@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-image: url(../imagem/Beleza\ \(1\).png);
+   background-color: #f944ff;
 }
 
 h1 {
@@ -53,8 +53,8 @@ textarea {
 button {
     
    
-background-color: #f700ff;
-    color: #fff;
+background-color: #ffffff;
+    color: #000000;
     
    
 padding: 10px;
@@ -64,5 +64,5 @@ padding: 10px;
 }
 
 button:hover {
-    background-color: #9e00b3;
+    background-color: #adadad;
 }

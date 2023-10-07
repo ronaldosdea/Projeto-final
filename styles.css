@@ -5,7 +5,8 @@
  @import url(card.css);
  @import url(comentario.css);
  @import url(menu.css);
-@import url(rodape.css);
+@import url(rodape.css); 
+@import url(to-do-list.css);
 
 
 body {
@@ -26,7 +27,6 @@ body {
 
 
 header {
-    background-color: #bb15e9;
     color: #fff;
     padding: 10px 0;
 }
@@ -60,9 +60,10 @@ nav ul li a:hover {
     height: 30%;
     
 }
-.carousel-control-prev{
 
-    background-color: transparent;
+#carouselExampleControlsNoTouching{
+
+    margin-top: 34px;
 }
 
 .carousel-item img{
@@ -115,8 +116,7 @@ nav ul li a:hover {
     padding: 40px 0;
     display: flex;
     justify-content: space-around;
-    background-color:#cb6ce6 ;
-
+    
 }
 
 
@@ -193,7 +193,7 @@ nav ul li a:hover {
 /* Estilos para o rodapé */
 
 /* Estilos responsivos para dispositivos móveis */
-@media screen and (max-width: 809px) {
+@media screen and (max-width: 768px) {
     .menu {
         display: none;
         position: fixed;
@@ -236,46 +236,6 @@ nav ul li a:hover {
     .menu a:hover {
         color: #e13ce7;
     }
-
-    .menu-icon {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-        z-index: 2000;
-        
-    }
-
-    .bar {
-        width: 25px;
-        height: 3px;
-        background-color: #fff;
-        margin: 4px 0;
-        transition: transform 0.3s, opacity 0.3s;
-    }
-
-    .menu-icon.active .bar:nth-child(1) {
-        transform: translateY(6px) rotate(45deg);
-    }
-
-    .menu-icon.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-icon.active .bar:nth-child(3) {
-        transform: translateY(-6px) rotate(-45deg);
-    }
-
-    .menu ul {
-        text-align: center;
-        padding: 10px 0;
-    }
-    
-    .menu ul li {
-        display: block;
-        margin: 10px 0;
-    }
     
     header {
         text-align: center;
@@ -283,9 +243,17 @@ nav ul li a:hover {
     
     .card-2 {
         
-        width: 72%;
+        
+        justify-content: space-between;
+        margin-top: 23px;
        
        
+    }
+
+    .carousel-item img{
+
+        width: 2000px;
+        height: 250px;
     }
     
     .article-section {
