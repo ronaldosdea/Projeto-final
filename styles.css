@@ -2,11 +2,10 @@
 /* Personalize os estilos conforme necessário */
 
  @import url(sec-3.css);
- @import url(card.css);
  @import url(comentario.css);
  @import url(menu.css);
 @import url(rodape.css); 
-@import url(to-do-list.css);
+@import url(botão.css);
 
 
 body {
@@ -194,66 +193,57 @@ nav ul li a:hover {
 
 /* Estilos responsivos para dispositivos móveis */
 @media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Ajuste o tamanho da fonte para telas menores */
+    }
+    .carousel-item img {
+        width: 100%; /* Faça a imagem do carrossel se ajustar à largura da tela */
+        height: auto; /* Evite distorção da imagem */
+    }
+    .introduction-container {
+        padding: 20px; /* Adicione espaço interno em telas menores */
+    }
+    /* Estilos para o menu em telas menores */
     .menu {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
+        display: flex; /* Exibe o menu em telas menores */
+        flex-direction: column; /* Exibe os itens do menu responsivo em coluna */
+        background-color: #bb15e9; /* Cor de fundo do menu responsivo */
+        position: absolute;
+        top: 60px; /* Ajuste a posição conforme necessário */
+        right: 0;
         width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-        transition: transform 0.3s ease-in-out;
+        margin-top: auto;
+    }
+    .menu li{
+        display: block;
+    }
+
+    .menu-toggle {
+        display: none; /* Oculta o ícone do menu em telas maiores */
     }
 
     .menu.active {
-        display: flex;
-        
-    }
-
-    .menu ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-       
-    }
-
-    .menu li {
-        margin: 20px;
-        
+        display: none; /* Oculta o menu responsivo quando a classe "active" é adicionada ao menu */
     }
 
     .menu a {
         text-decoration: none;
-        color: #fff;
-        font-size: 24px;
-        transition: color 0.3s;
+        color: #fff; /* Defina a cor do texto do menu responsivo */
+        padding: 10px 20px;
     }
 
-    .menu a:hover {
-        color: #e13ce7;
-    }
-    
     header {
         text-align: center;
     }
     
     .card-2 {
-        
-        
         justify-content: space-between;
         margin-top: 23px;
-       
-       
     }
 
-    .carousel-item img{
-
-        width: 2000px;
-        height: 250px;
+    .carousel-item img {
+        width: 100%;
+        height: auto;
     }
     
     .article-section {
