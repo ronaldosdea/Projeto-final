@@ -1,4 +1,4 @@
-/* Estilos para o menu */
+
 .menu {
     background-color: #bb15e9;
     position: fixed;
@@ -25,10 +25,9 @@
 
 .menu a:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    color: #bb15e9;
+    color: #f5dbfc;
 }
 
-/* Estilos para o submenu */
 .submenu-content {
     display: none;
     position: absolute;
@@ -36,10 +35,13 @@
     z-index: 1;
     top: 100%;
     left: 0;
+    background-color: #bb15e9;
+    top: 0;
 }
 
 .submenu:hover .submenu-content {
     display: block;
+    color: #fff;
 }
 
 .submenu-content li {
@@ -48,7 +50,7 @@
 
 .submenu-content a {
     padding: 10px 20px;
-    color: black;
+    color: rgb(231, 231, 231);
     text-decoration: none;
 }
 
@@ -56,3 +58,12 @@
     background-color: transparent;
     color: #bb15e9;
 }
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    cursor: pointer;
+    
+  }

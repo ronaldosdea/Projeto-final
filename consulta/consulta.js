@@ -56,8 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             consultaForm.reset();
 
-            // Redirecionar para a página principal após o agendamento da consulta
-            window.location.href = "http://127.0.0.1:5500/index.html"; // Substitua "URL_DA_PAGINA_PRINCIPAL" pela URL da sua página principal
+            window.location.href = "https://ronaldosdea.github.io/Projeto-final/"; 
         } else {
             alert("Por favor, complete o cadastro antes de agendar uma consulta.");
         }

@@ -17,9 +17,12 @@ body {
 #home{
     background-color: transparent;
 }
+#menu{
+    position: relative;
+}
 
 .content {
-    margin: 20px;
+    margin: 10px;
     padding: 20px;
     border: 1px solid #ccc;
 }
@@ -28,6 +31,9 @@ body {
 header {
     color: #fff;
     padding: 10px 0;
+    height: 50px;
+    position: relative;
+    background-color: #bb15e9;
 }
 
 nav ul {
@@ -59,55 +65,48 @@ nav ul li a:hover {
     height: 30%;
     
 }
-
-#carouselExampleControlsNoTouching{
-
-    margin-top: 34px;
+.carousel-control-next{
+    background-color: transparent;
 }
+
 
 .carousel-item img{
 
     width: 1980px;
-    height: 490;
+    height: 430px;
 }
 
 
 .introduction-container {
-  text-align: justify; /* Aplica a justificação ao texto */
-  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Escolha a fonte desejada */
-  font-size: 16px; /* Tamanho da fonte */
-  line-height: 1.5; /* Espaçamento entre linhas */
-  margin: 20px; /* Margem para espaçamento */
-  padding: 20px; /* Preenchimento interno */
-  background-color: #cb6ce6; /* Cor de fundo */
-  /* border: 1px solid #000000;  */
+  text-align: justify; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  font-size: 16px; 
+  line-height: 1.5; 
+  margin: 20px; 
+  padding: 20px; 
+  background-color: #cb6ce6; 
   box-shadow: 0 0 3px  black;
-  border-radius: 5px; /* Borda arredondada */
+  border-radius: 5px; 
   
 }
 
-/* Estilo para o título da introdução */
+
 .introduction-title {
-  font-size: 24px; /* Tamanho do título */
+  font-size: 24px; 
   display: flex;
   justify-content: center;
-  font-weight: bold; /* Negrito */
+  font-weight: bold; 
   color: #fff;
-  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  margin-bottom: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Estilo para o texto da introdução */
+
 .introduction-text {
-  font-size: 18px; /* Tamanho do texto */
-  margin-bottom: 10px; /* Espaçamento abaixo do texto */
+  font-size: 18px; 
+  margin-bottom: 10px; 
 }
 
-
-
-
-
-/* Personalize os estilos conforme necessário */
 
 .section-1 {
     
@@ -148,7 +147,7 @@ nav ul li a:hover {
 
 
 
-/* Estilos para a equipe e avaliações na seção 2 */
+
 .section-2{
     display: flex;
     justify-content: space-around;
@@ -176,10 +175,6 @@ nav ul li a:hover {
 
 }
 
-/* Personalize os estilos conforme necessário */
-
-
-
 #reviews {
     border: 1px solid #ccc;
     padding: 20px;
@@ -189,46 +184,33 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos para o rodapé */
 
-/* Estilos responsivos para dispositivos móveis */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 16px; /* Ajuste o tamanho da fonte para telas menores */
-    }
-    .carousel-item img {
-        width: 100%; /* Faça a imagem do carrossel se ajustar à largura da tela */
-        height: auto; /* Evite distorção da imagem */
-    }
-    .introduction-container {
-        padding: 20px; /* Adicione espaço interno em telas menores */
-    }
-    /* Estilos para o menu em telas menores */
+@media screen and (max-width: 1132px) {
+   
     .menu {
-        display: flex; /* Exibe o menu em telas menores */
-        flex-direction: column; /* Exibe os itens do menu responsivo em coluna */
-        background-color: #bb15e9; /* Cor de fundo do menu responsivo */
+        display: none;
+        flex-direction: column; 
+        background-color: #bb15e9; 
         position: absolute;
-        top: 60px; /* Ajuste a posição conforme necessário */
+        top: 40px;
         right: 0;
         width: 100%;
         margin-top: auto;
+    }
+    .menu.active {
+        display: flex;
     }
     .menu li{
         display: block;
     }
 
     .menu-toggle {
-        display: none; /* Oculta o ícone do menu em telas maiores */
-    }
-
-    .menu.active {
-        display: none; /* Oculta o menu responsivo quando a classe "active" é adicionada ao menu */
+        display: none; 
     }
 
     .menu a {
         text-decoration: none;
-        color: #fff; /* Defina a cor do texto do menu responsivo */
+        color: #fff; 
         padding: 10px 20px;
     }
 
@@ -242,8 +224,9 @@ nav ul li a:hover {
     }
 
     .carousel-item img {
-        width: 100%;
-        height: auto;
+        width: 1980px;
+        height: 590px;
+        
     }
     
     .article-section {
@@ -293,5 +276,12 @@ nav ul li a:hover {
     .section-4 {
         flex-direction: column;
         align-items: center;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+    .introduction-container {
+        padding: 20px;
     }
 }
