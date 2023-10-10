@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-   background-color: #cb6ce6;
+   background-color: #d984f0ab;
 }
 
 h1 {
     text-align: center;
-    color: #fff;
+    color: #000000;
 }
 
 .cadastro, .consulta {
@@ -25,16 +25,18 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
-    
-   
-max-width: 300px;
+    border-radius: 6px ;
+    box-shadow: 2px 2px 2px 4px black;
+    padding: 6px;
+    background-color: #ffffff;
+    max-width: 300px;
     margin: 0 auto;
 }
 
 label {
     margin-top: 10px;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
 }
 
 
@@ -53,7 +55,7 @@ textarea {
 button {
     
    
-background-color: #ffffff;
+background-color: #e478d2;
     color: #000000;
     
    
@@ -64,5 +66,5 @@ padding: 10px;
 }
 
 button:hover {
-    background-color: #adadad;
+    background-color: #ad045310;
 }
