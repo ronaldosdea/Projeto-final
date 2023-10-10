@@ -271,6 +271,11 @@ nav ul li a:hover {
     .pro hr {
         width: 100%;
     }
+    .submenu:hover .submenu-content {
+        display: none;
+        color: #fff;
+    }
+    
 
     .section-2,
     .section-4 {
