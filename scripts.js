@@ -1,4 +1,4 @@
-
+document.body.style.background = 'withe'
 document.addEventListener("DOMContentLoaded", function () {
     const carousel = document.getElementById("carousel");
     const items = Array.from(carousel.getElementsByTagName("li"));
